@@ -1,0 +1,12 @@
+:host {
+    background-color: rgb(3, 26, 126);
+    height: 100vh;
+    padding: 5%;
+    box-shadow: 1px 1px 5px rgb(0, 0, 0);
+    z-index: 9999;
+    min-width: 80px;
+}
+
+:host > .menu-container {
+    position: fixed;
+}

@@ -1,0 +1,9 @@
+:host > a {
+    color: rgba(255, 255, 255, 0.76);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+:host > a:hover {
+    text-decoration: underline;
+}

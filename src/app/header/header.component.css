@@ -1,0 +1,10 @@
+:host {
+    height: 3em;
+    border-bottom: 3px solid rgb(3, 26, 126);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    padding: 1em 3em;
+    font-style: italic;
+}

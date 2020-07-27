@@ -1,0 +1,5 @@
+:host {
+    display: grid;
+    grid-template-columns: auto 70% auto;
+    background-color: rgb(240, 240, 240);
+}
