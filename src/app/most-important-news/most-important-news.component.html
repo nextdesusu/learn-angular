@@ -1,0 +1,12 @@
+<h3>{{title}}</h3>
+<ul>
+    <li *ngFor="let newsArticle of newsList">
+        <app-article
+            [articleDate]="newsArticle.date"
+            [articleHref]="newsArticle.link"
+
+        >
+            {{newsArticle.name}}
+        </app-article>
+    </li>
+</ul>

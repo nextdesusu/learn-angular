@@ -9,6 +9,9 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { FreshNewsComponent } from './fresh-news/fresh-news.component';
 import { MainSectionComponent } from './main-section/main-section.component';
+import { ArticleComponent } from './article/article.component';
+import { MostImportantNewsComponent } from './most-important-news/most-important-news.component';
+import { ArticlesListComponent } from './articles-list/articles-list.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { MainSectionComponent } from './main-section/main-section.component';
     FooterComponent,
     HeaderComponent,
     FreshNewsComponent,
-    MainSectionComponent
+    MainSectionComponent,
+    ArticleComponent,
+    MostImportantNewsComponent,
+    ArticlesListComponent
   ],
   imports: [
     BrowserModule
