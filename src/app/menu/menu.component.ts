@@ -6,8 +6,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-  ln: string = "Германия";
-  lh: string = "#";
+  links: Array<string> = [
+    "Главное",
+    "Россия",
+    "Мир",
+    "Бывший СССР",
+    "Экономика",
+    "Силовые структуры",
+    "Наука и техника",
+    "Культура",
+    "Спорт",
+    "Интернет и СМИ",
+    "Ценности",
+    "Путешествия",
+    "Из жизни",
+    "Дом"
+  ];
   constructor() { }
 
   ngOnInit(): void {

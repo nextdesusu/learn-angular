@@ -1,0 +1,11 @@
+:host > input {
+    border-radius: .3em;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: .3em;
+    border: none;
+    transition: background-color .2s;
+}
+
+:host > input:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}

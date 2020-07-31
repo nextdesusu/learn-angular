@@ -12,6 +12,19 @@ import { MainSectionComponent } from './main-section/main-section.component';
 import { ArticleComponent } from './article/article.component';
 import { MostImportantNewsComponent } from './most-important-news/most-important-news.component';
 import { ArticlesListComponent } from './articles-list/articles-list.component';
+import { SearchComponent } from './search/search.component';
+import { Page404Component } from './page404/page404.component';
+import { ArticlePageComponent } from './article-page/article-page.component';
+import { MainPageComponent } from './main-page/main-page.component';
+import { Routes, RouterModule } from '@angular/router';
+import { from } from 'rxjs';
+
+const routes: Routes = [
+  { path: "main", component: MainPageComponent },
+  { path: "",   redirectTo: '/main', pathMatch: 'full' },
+  { path: "article-page", component: ArticlePageComponent },
+  { path: "**", component: Page404Component }
+];
 
 @NgModule({
   declarations: [
@@ -25,10 +38,18 @@ import { ArticlesListComponent } from './articles-list/articles-list.component';
     MainSectionComponent,
     ArticleComponent,
     MostImportantNewsComponent,
-    ArticlesListComponent
+    ArticlesListComponent,
+    SearchComponent,
+    ArticlePageComponent,
+    Page404Component,
+    MainPageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(routes)
+  ],
+  exports: [
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

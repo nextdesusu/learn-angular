@@ -9,4 +9,7 @@
 
 :host > .menu-container {
     position: fixed;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
 }
